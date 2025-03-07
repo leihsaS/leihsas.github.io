@@ -1,9 +1,85 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>El Pollito Feliz Sitio Oficial</title>
-    </head>
-    <body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Pollito Feliz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff3cd;
+            color: #5a3e1b;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #5a3e1b;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('chicken-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px black;
+        }
+        .menu {
+            margin: 20px;
+        }
+        .menu-item {
+            background-color: #fff;
+            padding: 15px;
+            margin: 10px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #5a3e1b;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
         <h1>El Pollito Feliz</h1>
-    </body>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Menú</a>
+            <a href="#">Reservaciones</a>
+            <a href="#">Ubicaciones</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+    <section class="hero">
+        ¡El mejor pollo a la parrilla te espera!
+    </section>
+    <section class="menu">
+        <h2>Nuestros Platillos</h2>
+        <div class="menu-item">Pollo a la Parrilla - $9.99</div>
+        <div class="menu-item">Alitas BBQ - $7.99</div>
+        <div class="menu-item">Combo Familiar - $19.99</div>
+    </section>
+    <footer>
+        Síguenos en redes sociales | Contacto: 123-456-789
+    </footer>
+</body>
 </html>
