@@ -29,7 +29,7 @@
             font-weight: bold;
         }
         .hero {
-            background: url('chicken-image.jpg') no-repeat center center/cover;
+            background: url('hero-image.jpg') no-repeat center center/cover;
             height: 300px;
             display: flex;
             align-items: center;
@@ -49,6 +49,14 @@
             width: 80%;
             border-radius: 10px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .menu-item img {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
         }
         footer {
             background-color: #5a3e1b;
@@ -74,12 +82,22 @@
     </section>
     <section class="menu">
         <h2>Nuestros Platillos</h2>
-        <div class="menu-item">Pollo a la Parrilla - $9.99</div>
-        <div class="menu-item">Alitas BBQ - $7.99</div>
-        <div class="menu-item">Combo Familiar - $19.99</div>
+        <div class="menu-item">
+            <img src="media/pollo_a_la_parrilla.png" alt="Pollo a la Parrilla">
+            <span>Pollo a la Parrilla - $9.99</span>
+        </div>
+        <div class="menu-item">
+            <img src="media/alitas-de-pollo.png" alt="Alitas de pollo">
+            <span>Alitas de pollo - $7.99</span>
+        </div>
+        <div class="menu-item">
+            <img src="media/combo-familiar.png" alt="Combo Familiar">
+            <span>Combo Familiar - $19.99</span>
+        </div>
     </section>
     <footer>
         Síguenos en redes sociales | Contacto: 123-456-789
     </footer>
 </body>
 </html>
+
