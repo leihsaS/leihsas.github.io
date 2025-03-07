@@ -11,11 +11,11 @@
             color: #5a3e1b;
             margin: 0;
             padding: 0;
-            text-align: center;
         }
         header {
             background-color: #ffcc00;
             padding: 20px;
+            text-align: center;
         }
         nav {
             display: flex;
@@ -38,9 +38,19 @@
             font-size: 2em;
             font-weight: bold;
             text-shadow: 2px 2px 5px black;
+            text-align: center;
         }
         .menu {
             margin: 20px;
+            text-align: center;
+        }
+        .menu h2 {
+            text-align: center;
+        }
+        .menu-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .menu-item {
             background-color: #fff;
@@ -51,18 +61,27 @@
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
             display: flex;
             align-items: center;
+            justify-content: space-between;
             gap: 15px;
         }
         .menu-item img {
-            width: 100px;
-            height: auto;
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
             border-radius: 5px;
+        }
+        .menu-item span {
+            flex-grow: 1;
+            text-align: left;
+            font-size: 1.2em;
+            font-weight: bold;
         }
         footer {
             background-color: #5a3e1b;
             color: white;
             padding: 10px;
             margin-top: 20px;
+            text-align: center;
         }
     </style>
 </head>
@@ -82,17 +101,19 @@
     </section>
     <section class="menu">
         <h2>Nuestros Platillos</h2>
-        <div class="menu-item">
-            <img src="media/pollo_a_la_parrilla.png" alt="Pollo a la Parrilla">
-            <span>Pollo a la Parrilla - $9.99</span>
-        </div>
-        <div class="menu-item">
-            <img src="media/alitas-de-pollo.png" alt="Alitas de pollo">
-            <span>Alitas de pollo - $7.99</span>
-        </div>
-        <div class="menu-item">
-            <img src="media/combo-familiar.png" alt="Combo Familiar">
-            <span>Combo Familiar - $19.99</span>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="media/pollo_a_la_parrilla.png" alt="Pollo a la Parrilla">
+                <span>Pollo a la Parrilla - $9.99</span>
+            </div>
+            <div class="menu-item">
+                <img src="media/alitas-de-pollo.png" alt="Alitas de pollo">
+                <span>Alitas de pollo con BBQ - $7.99</span>
+            </div>
+            <div class="menu-item">
+                <img src="media/combo-familiar.png" alt="Combo Familiar">
+                <span>Combo Familiar - $19.99</span>
+            </div>
         </div>
     </section>
     <footer>
@@ -100,4 +121,3 @@
     </footer>
 </body>
 </html>
-
